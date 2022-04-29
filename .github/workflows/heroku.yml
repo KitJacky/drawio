@@ -14,7 +14,7 @@ jobs:
         uses: gonuit/heroku-docker-deploy@v1.3.3
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "ilikedraw"
+          heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
           heroku_app_name: "jk@jk.hk"
           dockerfile_directory: ./
           dockerfile_name: Dockerfile
