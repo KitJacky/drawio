@@ -6,8 +6,8 @@ RUN npm run build
 
 FROM golang:1.13.4-alpine as builder
 RUN apk add --update --no-cache bash tzdata git
-RUN go get -u github.com/mmkhitaryan/drawio
-WORKDIR $GOPATH/src/github.com/mmkhitaryan/drawio
+RUN go get -u github.com/KitJacky/drawio
+WORKDIR $GOPATH/src/github.com/KitJacky/drawio
 RUN go install
 RUN mkdir -p /home/go/app
 RUN mkdir -p /usr/local/go/lib/time
