@@ -12,7 +12,7 @@ jobs:
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "ilikedraw"
-          heroku_email: "jk@jk.hk"
+          heroku_app_name: "jk@jk.hk"
           dockerfile_directory: ./
           dockerfile_name: Dockerfile
           docker_options: "--no-cache"
