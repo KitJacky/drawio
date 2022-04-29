@@ -15,11 +15,9 @@ jobs:
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
-          heroku_app_name: "jk@jk.hk"
+          email: ${{ secrets.HEROKU_EMAIL }}
           dockerfile_directory: ./
           dockerfile_name: Dockerfile
           docker_options: "--no-cache"
           process_type: web
-          #usedocker: true
-
 
