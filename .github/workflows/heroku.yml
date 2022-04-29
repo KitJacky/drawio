@@ -11,6 +11,6 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.0.0
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "drawdrawdraw"
+          heroku_app_name: "ilikedraw"
           heroku_email: "jk@jk.hk"
           usedocker: true
