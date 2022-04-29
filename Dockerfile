@@ -1,4 +1,4 @@
-FROM node:12.20.0-alpine3.11 as front
+FROM node:12.22.12-alpine3.14 as front
 WORKDIR /home/go/app
 COPY ./app .
 RUN npm install
