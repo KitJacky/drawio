@@ -17,8 +17,8 @@ FROM scratch
 COPY --from=builder /home/go/app /home/go/app
 WORKDIR /home/go/app
 COPY --from=builder /home/go/app/drawio /home/go/app/drawio
-RUN ls -las /home/go/app/
-RUN ls -las /home/go/app/dist
+RUN ls /home/go/app/
+RUN ls /home/go/app/dist
 COPY --from=front /home/go/app/dist /home/go/app/web
 EXPOSE 80
 ENTRYPOINT ["/home/go/app/drawio"]
